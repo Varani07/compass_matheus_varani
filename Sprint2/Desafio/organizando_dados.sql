@@ -51,11 +51,11 @@ tipo::varchar(20)
 
 -- carro
 idCarro::int 
-km::int
 chassi::varchar(45)
 marca::varchar(45)
 modelo::varchar(45)
 ano::int
+idCombustivel::int (carro)
 
 -- locacao
 idLocacao::int
@@ -65,6 +65,11 @@ dataEntrega::datetime
 horaEntrega::time
 qtdDiaria::int
 vlrDiaria::decimal
+idCarro::int (carro)
+kmCarro::int
+idCliente::int (cliente)
+idVendedor::int (pessoa)
+
 
 -- dimensional
 
