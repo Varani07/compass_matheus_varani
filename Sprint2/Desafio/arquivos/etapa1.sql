@@ -1,3 +1,72 @@
+create table tb_combustivel (
+	idCombustivel int primary key,
+	tipo text(20) not null
+);
+
+--
+
+create table tb_carro (
+	idCarro int primary key,
+	chassi text,
+	marca text,
+	modelo text,
+	ano int,
+	idCombustivel int,
+
+	foreign key (idCombustivel) references tb_combustivel (idCombustivel) 
+);
+
+--
+
+create table tb_pessoa (
+	idPessoa int primary key auto_increment,
+	nome text(60),
+	estado text(45)
+);
+
+--
+
+create table cliente (
+	idCliente int primary key,
+	idPessoa int,
+	cidade text(45),
+	pais text(45),
+
+	foreign key (idPessoa) references tb_pessoa (idPessoa)
+)
+
+--
+
+create table vendedor (
+	idVendedor int primary key,
+	idPessoa int,
+	sexo smallint,
+
+	foreign key (idPessoa) references tb_pessoa (idPessoa)
+)
+
+--
+
+create table tb_locacao_migracao (
+	idLocacao int primary key,
+	dataLocacao datetime not null,
+	horaLocacao time not null,
+	dataEntrega datetime not null,
+	horaEntrega time not null,
+	qtdDiaria int,
+	vlrDiaria decimal,
+	idCarro int,
+	kmCarro int,
+	idCliente,
+	idVendedor,
+
+	foreign key (idCarro) references tb_carro (idCarro),
+	foreign key (idCliente) references tb_cliente (idCliente),
+	foreign key (idVendedor) references tb_vendedor (idVendedor)
+)
+
+--
+
 insert into 
     tb_combustivel (idCombustivel, tipo) 
 select 
