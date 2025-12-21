@@ -32,5 +32,5 @@ ___
 # Evidências
 Evidências dos exercícios realizados na sprint contendo um breve parecer:
 - <a name="e01">Exercício 1<a/>
+    - Pode-se facilmente chegar no resultado pedido ao utilizar o operador relacional maior ou igual a na data *2015-01-01*, após isso apenas ordenar pelo id e apresentar as colunas pedidas.
     > ![evidenvcia_e01](/Sprint2/Evidencias/biblioteca/e01.png)
-    ***Pode-se facilmente chegar no resultado pedido ao utilizar o operador relacional maior ou igual a na data *2015-01-01*, após isso apenas ordenar pelo id e apresentar as colunas pedidas.***
