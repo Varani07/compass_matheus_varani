@@ -2,8 +2,12 @@
 
 ![Imagem de perfil](/imgs/perfil.jpg)
 ___
+## Sumário
+1. [Informações pessoais](#info_pessoal)
+2. [Sprints](#sprints)
+___
 
-## Informações pessoais
+## <a name="info_pessoal">Informações pessoais<a/>
 ### Introdução
 > Residindo atualmente em Novo Hamburgo, RS
 - Interesses:
@@ -54,7 +58,7 @@ ___
 
 ### Experiência profissional
 Trabalhei por alguns meses na DB Server com automação de tarefas para a Randoncorp utilizando o UiPath.
-
-## Sprints
+___
+## <a name="sprints">Sprints<a/>
 1. [Sprint 1](/Sprint%201/README.md)
 2. [Sprint 2](/Sprint%202/README.md)
