@@ -60,5 +60,5 @@ ___
 Trabalhei por alguns meses na DB Server com automação de tarefas para a Randoncorp utilizando o UiPath.
 ___
 ## <a name="sprints">Sprints<a/>
-1. [Sprint 1](/Sprint%201/README.md)
-2. [Sprint 2](/Sprint%202/README.md)
+1. [Sprint 1](/Sprint1/README.md)
+2. [Sprint 2](/Sprint2/README.md)
