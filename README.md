@@ -25,10 +25,10 @@ ___
 - [LinkedIn](https://www.linkedin.com/in/matheus-varani-739ba7287)
 
 ### Desenvolvimento acadêmico
-> #### Senac EAD - Análise e Desenvolvimento de Sistemas
+> #### ***Senac EAD - Análise e Desenvolvimento de Sistemas***
 - 2º semestre
 
-> #### [Automação - Usina Hidrelétrica](https://github.com/Varani07/gerenciamento_usina)
+> #### ***[Automação - Usina Hidrelétrica](https://github.com/Varani07/gerenciamento_usina)***
 - Montei um programa utilizando as seguintes tecnologias:
     1. Python
     2. MySQL
@@ -41,7 +41,7 @@ ___
 - Sendo possível acessar o controlador a distância utilizando SSH tunnel por meio do [Termius](https://termius.com/index.html).
 - Foram realizados diversos ajustes para diminuir os requisitos de hardware e então conseguir rodar em um dispositivo que possui 1GB de RAM.
 
-> #### Projeto para organização pessoal
+> #### ***Projeto para organização pessoal***
 - Tecnologias utilizadas:
     1. Python
     2. MySQL
