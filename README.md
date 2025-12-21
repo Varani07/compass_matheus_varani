@@ -32,7 +32,7 @@ ___
 - Montei um programa utilizando as seguintes tecnologias:
     1. Python
     2. MySQL
-    3. Docker/Docker
+    3. Docker
     4. RaspberryPi/Arch Linux
     5. Protocolo MQTT
     6. PLC
