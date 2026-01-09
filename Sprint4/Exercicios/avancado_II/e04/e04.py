@@ -1,4 +1,7 @@
-def calcular_valor_maximo(operadores:list[str],operandos:list[tuple[int,int]]) -> float:
+from typing import Literal
+
+
+def calcular_valor_maximo(operadores:list[Literal['+', '-', '/', '*', '%']],operandos:list[tuple[float,float]]) -> float:
     operacoes = {
         '+': lambda x, y: x + y,
         '-': lambda x, y: x - y,
@@ -12,5 +15,6 @@ def calcular_valor_maximo(operadores:list[str],operandos:list[tuple[int,int]]) -
         list(zip(operadores, operandos))
     ))
     return max(resultados)
+
 
 calcular_valor_maximo(operadores=['+','-','*','/','+'], operandos=[(3,6), (-7,4.9), (8,-8), (10,2), (8,4)])
