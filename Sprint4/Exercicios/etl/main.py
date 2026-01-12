@@ -90,9 +90,8 @@ def etapa_1(atores:tuple[str, ...], numero_filmes:tuple[int, ...]) -> None:
         numero_filmes (tuple[int, ...]): Número de filmes de cada ator/atriz.
     """
 
-    numero_de_filmes = [int(num) for num in numero_filmes]
-    maior_num_filmes = max(numero_de_filmes)
-    id_ator = numero_de_filmes.index(maior_num_filmes)
+    maior_num_filmes = max(numero_filmes)
+    id_ator = numero_filmes.index(maior_num_filmes)
     nome_ator = atores[id_ator]
 
     write_file('etapa-1.txt', f"O ator/atriz com maior número de filmes é {nome_ator}, com respectivamente {maior_num_filmes} filmes.")
@@ -162,12 +161,6 @@ def etapa_5(atores:tuple[str, ...], receita_bruta_total:tuple[float, ...]) -> No
         f"{item[0]} - {item[1]}\n"
         for item in lista_ordenada
     )
-
-    # Formatação da Ariana
-    # conteudo = "".join(
-    #     "%s - %.2f \n" % (item[0], item[1])
-    #     for item in lista_ordenada
-    # )
     write_file('etapa-5.txt', conteudo)
 
 
@@ -214,21 +207,22 @@ def realizar_etapas() -> None:
     etapa_4(filme_num_1=dados['filme_num_1'])
     etapa_5(atores=dados['atores'], receita_bruta_total=dados['receita_bruta_total'])
 
-    for colega, etapas in comparar_arquivos().items():
-        if colega in ['Ariana']:
-            print(f"{colega}:")
-            for etapa, diffs in etapas.items():
-                print(f"{etapa}:")
-                print(diffs)
+    # for colega, etapas in comparar_arquivos().items():
+    #     if colega in ['']:
+    #         print(f"{colega}:")
+    #         for etapa, diffs in etapas.items():
+    #             print(f"{etapa}:")
+    #             print(diffs)
+
                 # for diff in diffs:
                 #     print(diff)
 
-    # for i in range(1, 6):
-    #     if i not in [4, 5]:
-    #         print(read_file(f'etapa-{i}.txt')[0])
-    #     else:
-    #         for linha in read_file(f'etapa-{i}.txt'):
-    #             print(linha, end="")
+    for i in range(1, 6):
+        if i not in [4, 5]:
+            print(read_file(f'etapa-{i}.txt')[0])
+        else:
+            for linha in read_file(f'etapa-{i}.txt'):
+                print(linha, end="")
 
 
 if __name__ == '__main__':
