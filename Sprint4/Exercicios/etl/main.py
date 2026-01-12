@@ -217,12 +217,12 @@ def realizar_etapas() -> None:
                 # for diff in diffs:
                 #     print(diff)
 
-    for i in range(1, 6):
-        if i not in [4, 5]:
-            print(read_file(f'etapa-{i}.txt')[0])
-        else:
-            for linha in read_file(f'etapa-{i}.txt'):
-                print(linha, end="")
+    # for i in range(1, 6):
+    #     if i not in [4, 5]:
+    #         print(read_file(f'etapa-{i}.txt')[0])
+    #     else:
+    #         for linha in read_file(f'etapa-{i}.txt'):
+    #             print(linha, end="")
 
 
 if __name__ == '__main__':
