@@ -7,7 +7,7 @@ ___
 2. [Sprints](#sprints)
 ___
 
-## <a name="info_pessoal">Informações pessoais<a/>
+## <a name="info_pessoal">Informações pessoais</a>
 ### Introdução
 > Residindo atualmente em Novo Hamburgo, RS
 - Interesses:
@@ -59,6 +59,8 @@ ___
 ### Experiência profissional
 Trabalhei por alguns meses na DB Server com automação de tarefas para a Randoncorp utilizando o UiPath.
 ___
-## <a name="sprints">Sprints<a/>
+## <a name="sprints">Sprints</a>
 1. [Sprint 1](/Sprint1/README.md)
 2. [Sprint 2](/Sprint2/README.md)
+3. [Sprint 3](/Sprint3/README.md)
+4. [Sprint 4](/Sprint4/README.md)
