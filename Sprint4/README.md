@@ -249,47 +249,46 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     - ***range()*** resolve o propósito dessa atividade, lembrando de adicionar +1 em seu segundo argumento pois o mesmo não é inclusivo. <br><br>
     > ![evidencia_e07_avancado_II](/Sprint4/Evidencias/avancado_II/e07.png)
 
-## ETL
-- <a name="evidencia_etl">ETL</a>
-    - Arquivos contendo o resultado das etapas.
-        - [Etapa 1](/Sprint4/Evidencias/etl/etapa-1.txt)
-        - [Etapa 2](/Sprint4/Evidencias/etl/etapa-2.txt)
-        - [Etapa 3](/Sprint4/Evidencias/etl/etapa-3.txt)
-        - [Etapa 4](/Sprint4/Evidencias/etl/etapa-4.txt)
-        - [Etapa 5](/Sprint4/Evidencias/etl/etapa-5.txt)
-    - Explicando o código:
-        1. A função ```realizar_etapas()``` é acionada e tem como propósito receber os dados organizados de forma a poderem ser utilizados sem grandes complicações, sendo repassados para as respectivas etapas onde serão utilizados.
-        2. ```read_file()``` recebe como argumento o nome do arquivo a ser lido (str) e retorna umas lista de Strings, ```organizar_dados()``` recebe essa informação e realiza uma série de operações na mesma.
-        3. Primeiro lida com uma situação onde uma das linhas possui uma vírgula a mais, reparte as linhas em listas e após isso junta-as com ***zip()*** retornando um iterável onde a informação de cada coluna está presente em uma tupla diferente, facilitando então a manipulação de dados, principalmente para ordenar.
-        4. Uma função ```write_file()``` está presente ao fim de cada etapa, recebe como argumento o nome do arquivo no qual deve escrever e o conteúdo a ser escrito.
-        
-        ### Etapa - 1
-        - Quem é o ator/atriz com o maior número de filmes e a quantidade.
-        1. Utilizei ***max()*** na tupla que armazena todas as quantidades de filmes para pegar o maior valor.
-        2. Localizei o index do valor encontrado e com este eu encontrei o ator/atriz.
+## <a name="evidencia_etl">ETL</a>
+- Arquivos contendo o resultado das etapas.
+    - [Etapa 1](/Sprint4/Evidencias/etl/etapa-1.txt)
+    - [Etapa 2](/Sprint4/Evidencias/etl/etapa-2.txt)
+    - [Etapa 3](/Sprint4/Evidencias/etl/etapa-3.txt)
+    - [Etapa 4](/Sprint4/Evidencias/etl/etapa-4.txt)
+    - [Etapa 5](/Sprint4/Evidencias/etl/etapa-5.txt)
+- Explicando o código:
+    1. A função ```realizar_etapas()``` é acionada e tem como propósito receber os dados organizados de forma a poderem ser utilizados sem grandes complicações, sendo repassados para as respectivas etapas onde serão utilizados.
+    2. ```read_file()``` recebe como argumento o nome do arquivo a ser lido (str) e retorna umas lista de Strings, ```organizar_dados()``` recebe essa informação e realiza uma série de operações na mesma.
+    3. Primeiro lida com uma situação onde uma das linhas possui uma vírgula a mais, reparte as linhas em listas e após isso junta-as com ***zip()*** retornando um iterável onde a informação de cada coluna está presente em uma tupla diferente, facilitando então a manipulação de dados, principalmente para ordenar.
+    4. Uma função ```write_file()``` está presente ao fim de cada etapa, recebe como argumento o nome do arquivo no qual deve escrever e o conteúdo a ser escrito.
+    
+    ### Etapa - 1
+    - Quem é o ator/atriz com o maior número de filmes e a quantidade.
+    1. Utilizei ***max()*** na tupla que armazena todas as quantidades de filmes para pegar o maior valor.
+    2. Localizei o index do valor encontrado e com este eu encontrei o ator/atriz.
 
-        ### Etapa - 2
-        - Apresente a média da receita de bilheteria bruta dos principais filmes, levando em conta todos atores/atrizes.
-        1. Calculei a média utilizando ***sum()/len()*** e apresentei o resultado.
+    ### Etapa - 2
+    - Apresente a média da receita de bilheteria bruta dos principais filmes, levando em conta todos atores/atrizes.
+    1. Calculei a média utilizando ***sum()/len()*** e apresentei o resultado.
 
-        ### Etapa - 3
-        - Qual ator/atriz possui a maior média de bilheteria bruta por filme em conjunto com o valor respectivo.
-        1. Com ***max()*** consegui a maior média e a partir dela consegui o índice com ***index()***, usei o índice para chegar no ator/atriz e apresentei os dados.
+    ### Etapa - 3
+    - Qual ator/atriz possui a maior média de bilheteria bruta por filme em conjunto com o valor respectivo.
+    1. Com ***max()*** consegui a maior média e a partir dela consegui o índice com ***index()***, usei o índice para chegar no ator/atriz e apresentei os dados.
 
-        ### Etapa - 4
-        - Filmes do dataset em ordem decrescente por quantas vezes aparecem e nome.
-        1. Com um ***dictionary-comprehension***, fiz uso de ***set()*** e ***count()*** para descobrir quantas vezes cada filme está presente no dataset.
-        2. ***sorted()*** para gerar uma nova lista ordenada, ***items()*** no iterável já que se trata de um dicionário e ***(-valores[1], valores[0])*** com [1] sendo a quantidade de vezes e [0] o nome. Precisou ser feito dessa forma para conseguir ordenar de forma decrescente pela quantidade e crescente pelo nome.
-        3. ***enumerate()*** para listar os filmes passando como segundo argumento o início da contagem.
-        
-        ### Etapa - 5
-        - Lista dos atores ordenada pela receita bruta total em ordem decrescente.
-        1. ***zip()*** para juntar a tupla dos atores/atrizes com a da receita bruta total e ***list()*** para transformar em uma lista.
-        2. ***sorted()*** para ordenar a lista pelo segundo item das tuplas presentes na lista, que contém justamente a receita bruta total, ***reverse=True*** para que a ordem seja decrescente.
-        3. Aqui fiz uso de uma técnica bem interessante para gerar o conteúdo final a ser digitado no arquivo da etapa vigente, dentro do ***join()*** utilizei um ***generator-comprehension*** para produzir a saída solicitada, aplicando uma formatação para cada item da lista.
+    ### Etapa - 4
+    - Filmes do dataset em ordem decrescente por quantas vezes aparecem e nome.
+    1. Com um ***dictionary-comprehension***, fiz uso de ***set()*** e ***count()*** para descobrir quantas vezes cada filme está presente no dataset.
+    2. ***sorted()*** para gerar uma nova lista ordenada, ***items()*** no iterável já que se trata de um dicionário e ***(-valores[1], valores[0])*** com [1] sendo a quantidade de vezes e [0] o nome. Precisou ser feito dessa forma para conseguir ordenar de forma decrescente pela quantidade e crescente pelo nome.
+    3. ***enumerate()*** para listar os filmes passando como segundo argumento o início da contagem.
+    
+    ### Etapa - 5
+    - Lista dos atores ordenada pela receita bruta total em ordem decrescente.
+    1. ***zip()*** para juntar a tupla dos atores/atrizes com a da receita bruta total e ***list()*** para transformar em uma lista.
+    2. ***sorted()*** para ordenar a lista pelo segundo item das tuplas presentes na lista, que contém justamente a receita bruta total, ***reverse=True*** para que a ordem seja decrescente.
+    3. Aqui fiz uso de uma técnica bem interessante para gerar o conteúdo final a ser digitado no arquivo da etapa vigente, dentro do ***join()*** utilizei um ***generator-comprehension*** para produzir a saída solicitada, aplicando uma formatação para cada item da lista.
 
-        ### Extra - ```comparar_arquivos()```
-        - Compara os arquivos 'etapa-4.txt' e 'etapa-5.txt' com os arquivos presentes nas pastas da pasta 'etl_colegas'.
-        1. Itera por todas as pastas presentes no diretório específicado com ***iterdir()*** e após isso itera por todos os arquivos presentes nessa pasta fazendo uso da mesma função.
-        2. Lê o arquivo e compara com as respostas presentes no meu arquivo resposta.
-        3. Caso pelo menos uma linha estiver diferente será gerada uma chave no dicionário a ser retornado pela função com o nome do colega e um outro dicionário que tem o nome da etapa referente aos arquivos comparados e uma lista com todas as diferenças encontradas. Para facilitar a compreensão o retorno é neste formato: ```dict[str, dict[str, list[str]]]```.
+    ### Extra - ```comparar_arquivos()```
+    - Compara os arquivos 'etapa-4.txt' e 'etapa-5.txt' com os arquivos presentes nas pastas da pasta 'etl_colegas'.
+    1. Itera por todas as pastas presentes no diretório específicado com ***iterdir()*** e após isso itera por todos os arquivos presentes nessa pasta fazendo uso da mesma função.
+    2. Lê o arquivo e compara com as respostas presentes no meu arquivo resposta.
+    3. Caso pelo menos uma linha estiver diferente será gerada uma chave no dicionário a ser retornado pela função com o nome do colega e um outro dicionário que tem o nome da etapa referente aos arquivos comparados e uma lista com todas as diferenças encontradas. Para facilitar a compreensão o retorno é neste formato: ```dict[str, dict[str, list[str]]]```.
