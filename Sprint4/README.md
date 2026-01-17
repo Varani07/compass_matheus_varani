@@ -1,13 +1,13 @@
 # Resumo
 
-> ***Curso de Data Science para iniciantes***
+***Curso de Data Science para iniciantes***
 - Visão geral sobre as bibliotecas pandas, numpy e matplotlib.
 - Possíveis casos de uso para cada uma das bibliotecas.
 - Aprendi um pouco sobre o Jupyter Notebook e seus usos.
 - Gerar gráficos imformativos utilizando matplotlib.
 - Manipulação de dados utilizando pandas e numpy.
 
-> ***Data & Analytics - PB - AWS - 4/10 (A partir da Seção 5 até a 11)***
+***Data & Analytics - PB - AWS - 4/10 (A partir da Seção 5 até a 11)***
 - Concluí os exercícios propostos, então melhorando minha proficiência no tema abordado. 
 - Não só isso, mas também elevei meu conhecimento em relação a assuntos interessantes que fui percebendo a necessidade ao longo das atividades, como por exemplo a tipagem dos parâmetros para melhor entendimento do código em geral e a necessidade de docstring's para melhor documentação do que está sendo feito.
 
@@ -141,113 +141,113 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
 ## Básico
 - <a name="e01_basico">Exercício 1</a>
     - Neste exercício já estava usando a tipagem nos parâmetros, porém de forma simplificada. Um ***list-comprehension*** com uma condição simples já foi o suficiente para resolver o problema proposto. <br><br>
-    > ![evidencia_e01_basico](/Sprint4/Evidencias/basico/e01.png)
+    ![evidencia_e01_basico](/Sprint4/Evidencias/basico/e01.png)
 
 - <a name="e02_basico">Exercício 2</a>
     - Utilizando do desempacotamento com o asterisco, consegui passar os valores da lista como argumentos para a função. 
-    - Com ***list()***, separo os caracteres da string, ***reversed()*** gera um lista invertida, o ***join()*** junta os caracteres novamente em uma string e após isso comparo com o valor inicial. <br><br> 
-    > ![evidencia_e02_basico](/Sprint4/Evidencias/basico/e02.png)
+    - Com ***list()***, separo os caracteres da string, ***reversed()*** gera um lista invertida, o ***join()*** junta os caracteres novamente em uma string e após isso comparo com o valor inicial. <br><br
+    ![evidencia_e02_basico](/Sprint4/Evidencias/basico/e02.png)
 
 - <a name="e03_basico">Exercício 3</a>
     - Usando ***zip()*** para juntar as listas e ***enumerate()*** para mostrar o índice. <br><br>
-    > ![evidencia_e03_basico](/Sprint4/Evidencias/basico/e03.png)
+    ![evidencia_e03_basico](/Sprint4/Evidencias/basico/e03.png)
 
 - <a name="e04_basico">Exercício 4</a>
     - O ***set()*** remove os valores duplicados e ***list()*** transforma o resultado em uma lista novamente. <br><br>
-    > ![evidencia_e04_basico](/Sprint4/Evidencias/basico/e04.png)
+    ![evidencia_e04_basico](/Sprint4/Evidencias/basico/e04.png)
 
 - <a name="e05_basico">Exercício 5</a>
     - Usando ***json.load()***, consigo pegar os dados do arquivo JSON aberto com ***open()***. <br><br>
-    > ![evidencia_e05_basico](/Sprint4/Evidencias/basico/e05.png)
+    ![evidencia_e05_basico](/Sprint4/Evidencias/basico/e05.png)
 
 - <a name="e06_basico">Exercício 6</a>
     - Neste exercício comecei a explorar mais o uso da tipagem nos parâmetros com a biblioteca ***typing***. Fiz uso de ***Callable*** para definir o tipo de função que seria passada como argumento.
     - Utilizei ***lambda*** para criar funções anônimas e simples para passar como parâmetro. <br><br>
-    > ![evidencia_e06_basico](/Sprint4/Evidencias/basico/e06.png)
+    ![evidencia_e06_basico](/Sprint4/Evidencias/basico/e06.png)
 
 - <a name="e07_basico">Exercício 7</a>
     - Com ***readlines()***, retornei uma lista com as linhas do arquivo e juntei tudo em uma única String com ***join()***. <br><br>
-    > ![evidencia_e07_basico](/Sprint4/Evidencias/basico/e07.png)
+    ![evidencia_e07_basico](/Sprint4/Evidencias/basico/e07.png)
 
 - <a name="e08_basico">Exercício 8</a>
     - Fiz uso de ****args*** e *****kwargs*** para atender aos requisitos do exercício. Com ***'|'*** apontei nos parâmetros que seria repassado uma String ou um int e com ***'->'*** defini o tipo de retorno da função. <br><br>
-    > ![evidencia_e08_basico](/Sprint4/Evidencias/basico/e08.png)
+    ![evidencia_e08_basico](/Sprint4/Evidencias/basico/e08.png)
 
 - <a name="e09_basico">Exercício 9</a>
     - Criei a classe pedida e definios os métodos conforme solicitado. <br><br>
-    > ![evidencia_e09_basico](/Sprint4/Evidencias/basico/e09.png)
+    ![evidencia_e09_basico](/Sprint4/Evidencias/basico/e09.png)
 
 - <a name="e10_basico">Exercício 10</a>
     - Separei os números presentes na String com ***split(',')***, transformei em valores numéricos com ***int()*** e utilizei ***sum()*** para somar todos os valores. <br><br>
-    > ![evidencia_e10_basico](/Sprint4/Evidencias/basico/e10.png)
+    ![evidencia_e10_basico](/Sprint4/Evidencias/basico/e10.png)
 
 - <a name="e11_basico">Exercício 11</a>
     - Para repartir a lista em três partes, primeiro peguei seu tamanho com ***len()***, dividi por 3 e transformei em um valor inteiro. Após, para cada nova lista apliquei um ***range()*** com o resultado da divisão e apliquei o método ***append()*** recebendo como argumento o primeiro valor da lista original com ***pop(0)***, o que além de adicionar o valor na nova lista, o remove da original. <br><br>
-    > ![evidencia_e11_basico](/Sprint4/Evidencias/basico/e11.png)
+    ![evidencia_e11_basico](/Sprint4/Evidencias/basico/e11.png)
 
 - <a name="e12_basico">Exercício 12</a>
     - Para pegar apenas os valores do dicionário fiz o uso de ***values()***, transformei com ***set()***, removendo valores duplicados e então transformei novamente em uma lista. <br><br>
-    > ![evidencia_e12_basico](/Sprint4/Evidencias/basico/e12.png)
+    ![evidencia_e12_basico](/Sprint4/Evidencias/basico/e12.png)
 
 - <a name="e13_basico">Exercício 13</a>
     - Com ***sort()*** ordenei o iterável, realizei uma verificação para saber que tipo de operação deveria ser utilizada para calcular a mediada (par ou ímpar), usei ***sum()*** e ***len()*** para a média, ***min()*** para o valor mínimo e ***max()*** para o valor máximo. <br><br>
-    > ![evidencia_e13_basico](/Sprint4/Evidencias/basico/e13.png)
+    ![evidencia_e13_basico](/Sprint4/Evidencias/basico/e13.png)
 
 - <a name="e14_basico">Exercício 14</a>
     - ***reverse()*** alterou a lista original, invertendo sua ordem. <br><br>
-    > ![evidencia_e14_basico](/Sprint4/Evidencias/basico/e14.png)
+    ![evidencia_e14_basico](/Sprint4/Evidencias/basico/e14.png)
 
 ## Avançado
 - <a name="e01_avancado">Exercício 1</a>
     - Reutilizei os métodos da classe pai para as suas classes filhas, utilizando ***super()*** e ***self.__class__.__name__*** para pegar de forma dinâmica o nome da classe. <br><br>
-    > ![evidencia_e01_avancado](/Sprint4/Evidencias/avancado/e01.png)
+    ![evidencia_e01_avancado](/Sprint4/Evidencias/avancado/e01.png)
 
 - <a name="e02_avancado">Exercício 2</a>
     - Fazendo uso dos decoradores ***@property*** e ***@metodo.setter***, consegui criar os getters e setters para o atributo privado. <br><br>
-    > ![evidencia_e02_avancado](/Sprint4/Evidencias/avancado/e02.png)
+    ![evidencia_e02_avancado](/Sprint4/Evidencias/avancado/e02.png)
 
 - <a name="e03_avancado">Exercício 3</a>
     - Gerei os dois métodos solicitados na classe pedida e então efetuei as operações necessárias. <br><br>
-    > ![evidencia_e03_avancado](/Sprint4/Evidencias/avancado/e03.png)
+    ![evidencia_e03_avancado](/Sprint4/Evidencias/avancado/e03.png)
 
 - <a name="e04_avancado">Exercício 4</a>
     - Nenhuma peculiaridade neste exercício, construi a classe conforme solicitado e apliquei os métodos necessários. <br><br>
-    > ![evidencia_e04_avancado](/Sprint4/Evidencias/avancado/e04.png)
+    ![evidencia_e04_avancado](/Sprint4/Evidencias/avancado/e04.png)
 
 - <a name="e05_avancado">Exercício 5</a>
     - Construi a classe e instanciei os objetos pedidos, após isso apresentando-os com um for loop. <br><br>
-    > ![evidencia_e05_avancado](/Sprint4/Evidencias/avancado/e05.png)
+    ![evidencia_e05_avancado](/Sprint4/Evidencias/avancado/e05.png)
 
 ## Avançado II
 - <a name="e01_avancado_II">Exercício 1</a>
     - ***map()*** aplicou uma função em cada linha do arquivo para que o número fosse transformado em inteiro da forma correta, após isso ***filter()*** removeu todos os valores ímpares. 
     - ***sorted()*** retornou uma nova lista em ordem decrescente por conta do argumento ***reverse=True***, ***[:5]*** para apresentar apenas os cinco primeiros valores e ***sum()*** para somar. <br><br>
-    > ![evidencia_e01_avancado_II](/Sprint4/Evidencias/avancado_II/e01.png)
+    ![evidencia_e01_avancado_II](/Sprint4/Evidencias/avancado_II/e01.png)
 
 - <a name="e02_avancado_II">Exercício 2</a>
     - ***list()*** repartiu o texto e ***filter()*** removeu todas as consoantes com a função ***lambda***, após isso ***len()*** retornou a quantia de vogais. <br><br>
-    > ![evidencia_e02_avancado_II](/Sprint4/Evidencias/avancado_II/e02.png)
+    ![evidencia_e02_avancado_II](/Sprint4/Evidencias/avancado_II/e02.png)
 
 - <a name="e03_avancado_II">Exercício 3</a>
     - ***map()*** transformou todos os valores com 'D' (Débito) em negativos e ***reduce()*** somou todos os valores. Foi somente aqui que eu realmente entendi o uso do ***reduce()***, um sentimento um tanto quanto gratificante. <br><br>
-    > ![evidencia_e03_avancado_II](/Sprint4/Evidencias/avancado_II/e03.png)
+    ![evidencia_e03_avancado_II](/Sprint4/Evidencias/avancado_II/e03.png)
 
 - <a name="e04_avancado_II">Exercício 4</a>
     - ***zip()*** juntou a lista de operandos com a dos operadores, ***map()*** aplicou nos valores a respectiva função ***lambda*** armazenada em um dicionário e ***max()*** retornou o maior dos resultados. <br><br>
-    > ![evidencia_e04_avancado_II](/Sprint4/Evidencias/avancado_II/e04.png)
+    ![evidencia_e04_avancado_II](/Sprint4/Evidencias/avancado_II/e04.png)
 
 - <a name="e05_avancado_II">Exercício 5</a>
     - Utilizei ***sort()*** nos dados do arquivo para organizar por ordem alfabética com ***key=lambda item: item.split(',')[0]***, já que o primeiro item do resultado desse ***split()*** é o nome do aluno.
     - ***map()*** transforma todas as notas do aluno com ***int()***, ***sorted(notas, reverse=True)[:3]*** ordena de forma decrescente a nota dos alunos pegando apenas as 3 primeiras e ***round()*** recebe o retorno do cálculo da média dessas notas e arredonda para o número de casas decimais informada. <br><br>
-    > ![evidencia_e05_avancado_II](/Sprint4/Evidencias/avancado_II/e05.png)
+    ![evidencia_e05_avancado_II](/Sprint4/Evidencias/avancado_II/e05.png)
 
 - <a name="e06_avancado_II">Exercício 6</a>
     - Primeiro os valores do dicionário são pegos com ***list-comprehension*** para então a média poder ser calculada. ***filter()*** retorna um iterável com apenas os itens que estão com o preço acima da média encontrada e utilizamos o ***sort()*** em combinação com seu argumento ***key*** para definir de que forma o iterável será ordenado. <br><br>
-    > ![evidencia_e06_avancado_II](/Sprint4/Evidencias/avancado_II/e06.png)
+    ![evidencia_e06_avancado_II](/Sprint4/Evidencias/avancado_II/e06.png)
 
 - <a name="e07_avancado_II">Exercício 7</a>
     - ***range()*** resolve o propósito dessa atividade, lembrando de adicionar +1 em seu segundo argumento pois o mesmo não é inclusivo. <br><br>
-    > ![evidencia_e07_avancado_II](/Sprint4/Evidencias/avancado_II/e07.png)
+    ![evidencia_e07_avancado_II](/Sprint4/Evidencias/avancado_II/e07.png)
 
 ## <a name="evidencia_etl">ETL</a>
 - Arquivos contendo o resultado das etapas.
