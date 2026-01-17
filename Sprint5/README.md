@@ -1,6 +1,13 @@
 # Resumo
+## Sumário
+- [Cursos](#cursos)
+    - [Data & Analytics](#data)
+    - [Docker](#docker)
+    - [Regex](#regex)
+- [Desafio](#desafio)
 
-## ***Data & Analytics - PB - AWS - 5/10 (Seção 6)***
+## <a name="cursos">Cursos</a>
+### <a name="data">***Data & Analytics - PB - AWS - 5/10 (Seção 6)***</a>
 Percebi que meu curso não estava filtrado, contém apenas uma breve instrodução do que será visto na Sprint. Mas como já havia lido um pouco do conteúdo e achei interessante, vou deixar abaixo.
 
 - 4 principais módulos do Hadoop:
@@ -19,7 +26,7 @@ Percebi que meu curso não estava filtrado, contém apenas uma breve instroduç�
     MapReduce: NameNode, DataNode e SecondaryNameNode.
     HDFS: JobTracker e TaskTracker.
 
-## ***Docker para Desenvolvedores - com Docker Swarm e Kubernetes (Seção 1 até 8, 10 e 12)***
+### <a name="docker">***Docker para Desenvolvedores - com Docker Swarm e Kubernetes (Seção 1 até 8, 10 e 12)***</a>
 - Instalação das seguintes ferramentas: Docker Desktop, Kubernetes, Minikube e Cmder.
 - Docker:
     1. Baixar, Rodar, Montar e Gerenciar ***Imagens***, inclusive a enviar para o Docker Hub.
@@ -44,7 +51,7 @@ Percebi que meu curso não estava filtrado, contém apenas uma breve instroduç�
     4. Utilizar de um arquivo ```.yaml``` para configurar o projeto e o utilizar para rodar e atualizar todos os ***pods*** de forma prática e rápida.
     5. Retornar a versão anterior se necessário com o comando ```kubectl rollout undo deployment/<nome>```.
 
-## ***Python - REGEX***
+### <a name="regex">***Python - REGEX***</a>
 - Com o vídeo pude aprender o básico do básico sobre usos da biblioteca ***re***.
 - Consolidei o conhecimento tentando criar padrões para endereços de email e cpf, corrigindo meus erros e aprendendo com o ***ChatGPT***, sempre perguntando o porque das coisas, tentando ao máximo entender para poder aplicar futuramente. Após fazer uso da IA, sempre testando no ***python*** da minha máquina para ter certeza dos resultados.
 - Assisti a outros vídeos por fora, pois achei o assunto muito interessante e queria aprofundar meu conhecimento.
@@ -67,7 +74,7 @@ Percebi que meu curso não estava filtrado, contém apenas uma breve instroduç�
 
 ___
 
-# Desafio
+## <a name="desafio">Desafio</a>
 Pasta contendo arquivos e README.md referente ao desafio proposto:
 - [Pasta do desafio](/Sprint5/Desafio/)
 - [README.md do desafio](/Sprint5/Desafio/README.md)

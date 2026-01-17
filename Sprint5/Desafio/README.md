@@ -1,6 +1,7 @@
 # Desafio
 O desafio aborda alguns conhecimentos adquiridos no decorrer da Sprint a respeito de ***Docker***.
 
+## Sumário
 - [Etapa 1](#etapa-1)
 - [Etapa 2](#etapa-2)
 - [Etapa 3](#etapa-3)

@@ -11,19 +11,28 @@
 - Concluí os exercícios propostos, então melhorando minha proficiência no tema abordado. 
 - Não só isso, mas também elevei meu conhecimento em relação a assuntos interessantes que fui percebendo a necessidade ao longo das atividades, como por exemplo a tipagem dos parâmetros para melhor entendimento do código em geral e a necessidade de docstring's para melhor documentação do que está sendo feito.
 
-___
+## Sumário
+- [Desafio](#desafio)
+- [Exercícios Python](#python)
+    - [Básico](#ex_basico)
+    - [Avançado](#ex_avancado)
+    - [Avançado II](#ex_avancado_ii)
+    - [ETL](#ex_etl)
+- [Evidências](#evidencias)
+    - [Básico](#ev_basico)
+    - [Avançado](#ev_avancado)
+    - [Avançado II](#ev_avancado_ii)
+    - [ETL](#evidencia_etl)
 
-# Desafio
+## <a name="desafio">Desafio</a>
 Pasta contendo arquivos e README.md referente ao desafio proposto:
 - [Pasta do desafio](/Sprint4/Desafio/)
 - [README.md do desafio](/Sprint4/Desafio/README.md)
 
-___
-
-# Exercícios Python
+## <a name="python">Exercícios Python</a>
 Lista dos exercícios realizados, contendo um link para a solução e outro que irá levar a sua devida evidência.
 
-## Básico
+### <a name="ex_basico">Básico</a>
 - Exercício 1:
     - [Script .py contendo resposta](/Sprint4/Exercicios/basico/e01/e01.py)
     - [Evidência](#e01_basico)
@@ -80,7 +89,7 @@ Lista dos exercícios realizados, contendo um link para a solução e outro que 
     - [Script .py contendo resposta](/Sprint4/Exercicios/basico/e14/e14.py)
     - [Evidência](#e14_basico)
 
-## Avançado
+### <a name="ex_avancado">Avançado</a>
 - Exercício 1:
     - [Script .py contendo resposta](/Sprint4/Exercicios/avancado/e01/e01.py)
     - [Evidência](#e01_avancado)
@@ -101,7 +110,7 @@ Lista dos exercícios realizados, contendo um link para a solução e outro que 
     - [Script .py contendo resposta](/Sprint4/Exercicios/avancado/e05/e05.py)
     - [Evidência](#e05_avancado)
 
-## Avançado II
+### <a name="ex_avancado_ii">Avançado II</a>
 - Exercício 1:
     - [Script .py contendo resposta](/Sprint4/Exercicios/avancado_II/e01/e01.py)
     - [Evidência](#e01_avancado_II)
@@ -130,22 +139,22 @@ Lista dos exercícios realizados, contendo um link para a solução e outro que 
     - [Script .py contendo resposta](/Sprint4/Exercicios/avancado_II/e07/e07.py)
     - [Evidência](#e07_avancado_II)
 
-## ETL
+### <a name="ex_etl">ETL</a>
 - [Script .py contendo resposta](/Sprint4/Exercicios/etl/main.py)
 - [Evidência](#evidencia_etl)
 ___
 
-# Evidências
+## <a name="evidencias">Evidências</a>
 Evidências dos exercícios realizados na sprint contendo um breve parecer:
 
-## Básico
+### <a name="ev_basico">Básico</a>
 - <a name="e01_basico">Exercício 1</a>
     - Neste exercício já estava usando a tipagem nos parâmetros, porém de forma simplificada. Um ***list-comprehension*** com uma condição simples já foi o suficiente para resolver o problema proposto. <br><br>
     ![evidencia_e01_basico](/Sprint4/Evidencias/basico/e01.png)
 
 - <a name="e02_basico">Exercício 2</a>
     - Utilizando do desempacotamento com o asterisco, consegui passar os valores da lista como argumentos para a função. 
-    - Com ***list()***, separo os caracteres da string, ***reversed()*** gera um lista invertida, o ***join()*** junta os caracteres novamente em uma string e após isso comparo com o valor inicial. <br><br
+    - Com ***list()***, separo os caracteres da string, ***reversed()*** gera um lista invertida, o ***join()*** junta os caracteres novamente em uma string e após isso comparo com o valor inicial. <br><br>
     ![evidencia_e02_basico](/Sprint4/Evidencias/basico/e02.png)
 
 - <a name="e03_basico">Exercício 3</a>
@@ -197,7 +206,7 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     - ***reverse()*** alterou a lista original, invertendo sua ordem. <br><br>
     ![evidencia_e14_basico](/Sprint4/Evidencias/basico/e14.png)
 
-## Avançado
+### <a name="ev_avancado">Avançado</a>
 - <a name="e01_avancado">Exercício 1</a>
     - Reutilizei os métodos da classe pai para as suas classes filhas, utilizando ***super()*** e ***self.__class__.__name__*** para pegar de forma dinâmica o nome da classe. <br><br>
     ![evidencia_e01_avancado](/Sprint4/Evidencias/avancado/e01.png)
@@ -218,7 +227,7 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     - Construi a classe e instanciei os objetos pedidos, após isso apresentando-os com um for loop. <br><br>
     ![evidencia_e05_avancado](/Sprint4/Evidencias/avancado/e05.png)
 
-## Avançado II
+### <a name="ev_avancado_ii">Avançado II</a>
 - <a name="e01_avancado_II">Exercício 1</a>
     - ***map()*** aplicou uma função em cada linha do arquivo para que o número fosse transformado em inteiro da forma correta, após isso ***filter()*** removeu todos os valores ímpares. 
     - ***sorted()*** retornou uma nova lista em ordem decrescente por conta do argumento ***reverse=True***, ***[:5]*** para apresentar apenas os cinco primeiros valores e ***sum()*** para somar. <br><br>
@@ -249,7 +258,7 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     - ***range()*** resolve o propósito dessa atividade, lembrando de adicionar +1 em seu segundo argumento pois o mesmo não é inclusivo. <br><br>
     ![evidencia_e07_avancado_II](/Sprint4/Evidencias/avancado_II/e07.png)
 
-## <a name="evidencia_etl">ETL</a>
+### <a name="evidencia_etl">ETL</a>
 - Arquivos contendo o resultado das etapas.
     - [Etapa 1](/Sprint4/Evidencias/etl/etapa-1.txt)
     - [Etapa 2](/Sprint4/Evidencias/etl/etapa-2.txt)
@@ -262,32 +271,32 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     3. Primeiro lida com uma situação onde uma das linhas possui uma vírgula a mais, reparte as linhas em listas e após isso junta-as com ***zip()*** retornando um iterável onde a informação de cada coluna está presente em uma tupla diferente, facilitando então a manipulação de dados, principalmente para ordenar.
     4. Uma função ```write_file()``` está presente ao fim de cada etapa, recebe como argumento o nome do arquivo no qual deve escrever e o conteúdo a ser escrito.
     
-    ### Etapa - 1
+    #### Etapa - 1
     - Quem é o ator/atriz com o maior número de filmes e a quantidade.
     1. Utilizei ***max()*** na tupla que armazena todas as quantidades de filmes para pegar o maior valor.
     2. Localizei o index do valor encontrado e com este eu encontrei o ator/atriz.
 
-    ### Etapa - 2
+    #### Etapa - 2
     - Apresente a média da receita de bilheteria bruta dos principais filmes, levando em conta todos atores/atrizes.
     1. Calculei a média utilizando ***sum()/len()*** e apresentei o resultado.
 
-    ### Etapa - 3
+    #### Etapa - 3
     - Qual ator/atriz possui a maior média de bilheteria bruta por filme em conjunto com o valor respectivo.
     1. Com ***max()*** consegui a maior média e a partir dela consegui o índice com ***index()***, usei o índice para chegar no ator/atriz e apresentei os dados.
 
-    ### Etapa - 4
+    #### Etapa - 4
     - Filmes do dataset em ordem decrescente por quantas vezes aparecem e nome.
     1. Com um ***dictionary-comprehension***, fiz uso de ***set()*** e ***count()*** para descobrir quantas vezes cada filme está presente no dataset.
     2. ***sorted()*** para gerar uma nova lista ordenada, ***items()*** no iterável já que se trata de um dicionário e ***(-valores[1], valores[0])*** com [1] sendo a quantidade de vezes e [0] o nome. Precisou ser feito dessa forma para conseguir ordenar de forma decrescente pela quantidade e crescente pelo nome.
     3. ***enumerate()*** para listar os filmes passando como segundo argumento o início da contagem.
     
-    ### Etapa - 5
+    #### Etapa - 5
     - Lista dos atores ordenada pela receita bruta total em ordem decrescente.
     1. ***zip()*** para juntar a tupla dos atores/atrizes com a da receita bruta total e ***list()*** para transformar em uma lista.
     2. ***sorted()*** para ordenar a lista pelo segundo item das tuplas presentes na lista, que contém justamente a receita bruta total, ***reverse=True*** para que a ordem seja decrescente.
     3. Aqui fiz uso de uma técnica bem interessante para gerar o conteúdo final a ser digitado no arquivo da etapa vigente, dentro do ***join()*** utilizei um ***generator-comprehension*** para produzir a saída solicitada, aplicando uma formatação para cada item da lista.
 
-    ### Extra - ```comparar_arquivos()```
+    #### Extra - ```comparar_arquivos()```
     - Compara os arquivos 'etapa-4.txt' e 'etapa-5.txt' com os arquivos presentes nas pastas da pasta 'etl_colegas'.
     1. Itera por todas as pastas presentes no diretório específicado com ***iterdir()*** e após isso itera por todos os arquivos presentes nessa pasta fazendo uso da mesma função.
     2. Lê o arquivo e compara com as respostas presentes no meu arquivo resposta.

@@ -1,8 +1,11 @@
 # Resumo
+## Sumário
+- [Python 3](#python)
+    - [Aprendizados](#aprendizados)
+    - [Conceitos Revisados](#conceitos)
 
-> ***Python 3***
-
-## Aprendizados:
+## <a name="python">Python 3 - Curso Completo do Básico ao Avançado</a>
+### <a name="aprendizados">Aprendizados:</a>
 - yield
     > Retorno parcial, dependendo do contexto pode-se usar o next() passando o generator como parâmetro para obter o próximo valor gerado.
 - Operadores de atribuição (%=, **=, //=)
@@ -97,7 +100,7 @@
     month_name[1] # Janeiro
     ```
 
-## Conceitos revisados:
+### <a name="conceitos">Conceitos revisados:</a>
 - Buit-in Functions
     - Print()
     - Input()

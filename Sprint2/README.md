@@ -1,6 +1,20 @@
 # Resumo
+## Sumário
+- [Cursos](#cursos)
+    - [SQL](#sql)
+    - [Data & Analytics](#data)
+- [Desafio](#desafio)
+- [Exercícios](#exercicios)
+    - [Biblioteca](#ex_biblioteca)
+    - [Loja](#ex_loja)
+    - [Exportação de Dados](#ex_exportacao)
+- [Evidências](#evidencias)
+    - [Biblioteca](#ev_biblioteca)
+    - [Loja](#ev_loja)
+    - [Exportação de Dados](#ev_exportacao)
 
-## ***SQL Para Análise de Dados***
+## <a name="cursos">Cursos</a>
+### <a name="sql">***SQL Para Análise de Dados***</a>
 - Instalar e configurar o pgAdmin/PostgreSQL
 - Visão geral sobre o pgAdmin
 - Revisei conhecimentos sobre: Select, Order By, Where, Limit, Join, Operadores Aritméticos e de comparação.
@@ -8,23 +22,23 @@
 
 Aprofundei em muito meu conhecimento com as aulas precisas e claras da instrutora, aprendendo sobre conversão de unidades e tratamento de dados com exemplos práticos e realistas.
 
-## ***Data & Analytics - PB - AWS - 2/10 (A partir da Seção 9 até a 16)***
+### <a name="data">***Data & Analytics - PB - AWS - 2/10 (A partir da Seção 9 até a 16)***</a>
 - Concluindo as atividades propostas consegui então concretizar o conhecimento adquirido no curso de SQL. 
 - Aprendi também sobre como exportar os dados vindos de uma pesquisa com *select* definindo o separador, bem como a utilizar o *DBeaver* como ferramenta para atingir o objetivo proposto pelo desafio da Sprint 2.
 
 ___
 
-# Desafio
+## <a name="desafio">Desafio</a>
 Pasta contendo arquivos e README.md referente ao desafio proposto:
 - [Pasta do desafio](/Sprint2/Desafio/)
 - [README.md do desafio](/Sprint2/Desafio/README.md)
 
 ___
 
-# Exercícios
+## <a name="exercicios">Exercícios</a>
 Lista dos exercícios realizados, contendo um link para a solução e outro que irá levar a sua devida evidência.
 
-## Biblioteca
+### <a name="ex_biblioteca">Biblioteca</a>
 - Exercício 1:
     - [Script .sql contendo resposta](/Sprint2/Exercicios/biblioteca/e01/e01.sql)
     - [Evidência](#e01)
@@ -53,7 +67,7 @@ Lista dos exercícios realizados, contendo um link para a solução e outro que 
     - [Script .sql contendo resposta](/Sprint2/Exercicios/biblioteca/e07/e07.sql)
     - [Evidência](#e07)
 
-## Loja
+### <a name="ex_loja">Loja</a>
 - Exercício 8:
     - [Script .sql contendo resposta](/Sprint2/Exercicios/loja/e08/e08.sql)
     - [Evidência](#e08)
@@ -90,7 +104,7 @@ Lista dos exercícios realizados, contendo um link para a solução e outro que 
     - [Script .sql contendo resposta](/Sprint2/Exercicios/loja/e16/e16.sql)
     - [Evidência](#e16)
 
-## Exportação de Dados
+### <a name="ex_exportacao">Exportação de Dados</a>
 - Etapa 1:
     - [Script .sql contendo resposta](/Sprint2/Exercicios/exportacao_dados/etapa_1/etapa1.sql)
     - [Evidência](#etapa_1)
@@ -100,16 +114,16 @@ Lista dos exercícios realizados, contendo um link para a solução e outro que 
     - [Evidência](#etapa_2)
 ___
 
-# Evidências
+## <a name="evidencias">Evidências</a>
 Evidências dos exercícios realizados na sprint contendo um breve parecer:
 
-## Biblioteca
+### <a name="ev_biblioteca">Biblioteca</a>
 - <a name="e01">Exercício 1</a>
     - Pode-se facilmente chegar no resultado pedido ao utilizar o operador relacional maior ou igual a na data ***2015-01-01***, após isso apenas ordenar pelo id e apresentar as colunas pedidas. <br><br>
     ![evidencia_e01](/Sprint2/Evidencias/biblioteca/e01.png)
 
 - <a name="e02">Exercício 2</a>
-    - Utilizei Limit para buscar apenas a quantidade pedida na questão e ordenei o valor por ordem decrescente assim então conseguindo os 10 livros mais caros. <br><br
+    - Utilizei Limit para buscar apenas a quantidade pedida na questão e ordenei o valor por ordem decrescente assim então conseguindo os 10 livros mais caros. <br><br>
     ![evidencia_e02](/Sprint2/Evidencias/biblioteca/e02.png)
 
 - <a name="e03">Exercício 3</a>
@@ -132,7 +146,7 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     - Acredito que poderia ter solucionado este exercício com o ***having***, mas fui ter mais domínio acerca dele só na segunda parte das atividades. <br><br>
     ![evidencia_e07](/Sprint2/Evidencias/biblioteca/e07.png)
 
-## Loja
+### <a name="ev_loja">Loja</a>
 - <a name="e08">Exercício 8</a>
     - Outro momento em que acredito poder ter utilizado o having. Utilizei uma subquerie para retornar qual vendedor teve o maior número de vendas concluídas. <br><br>
     ![evidencia_e08](/Sprint2/Evidencias/loja/e08.png)
@@ -169,7 +183,7 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     - Utilizei a função round para arredondar o retorno como foi pedido no enunciado e ordenar da forma solicitada. <br><br>
     ![evidencia_e16](/Sprint2/Evidencias/loja/e16.png)
 
-## Exportação de Dados
+### <a name="ev_exportacao">Exportação de Dados</a>
 - <a name="etapa_1">Etapa 1</a>
     - Fazendo uso do comando sqlite3 direto no terminal consegui exportar o resultado do select para um arquivo .csv, apenas definindo o separador como ponto e vírgula. <br><br>
     [Evidência - Etapa 1](/Sprint2/Evidencias/exportacao_dados/etapa1.csv)
