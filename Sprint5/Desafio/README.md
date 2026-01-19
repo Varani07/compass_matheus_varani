@@ -41,9 +41,9 @@ O desafio aborda alguns conhecimentos adquiridos no decorrer da Sprint a respeit
     ```docker ps -a```
 
 ## <a name="etapa-2">Etapa 2</a>
-- Reutilizando o container, necessário utilizar a flag ```-i``` para conseguir ver o retorno da execução do container
-    ![start](/Sprint5/Evidencias/desafio/etapa-1/start.png)
-    ```docker start -i <id_container>```
+- Reutilizando o container, necessário utilizar a flag ```-a``` para conseguir ver o retorno da execução do container
+    ![start](/Sprint5/Evidencias/desafio/etapa-2/start.png)
+    ```docker start -a <id_container>```
 
 ## <a name="etapa-3">Etapa 3</a>
 - Criar arquivo ```.py``` para receber uma string por input;
