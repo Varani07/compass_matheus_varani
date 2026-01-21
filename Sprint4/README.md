@@ -183,7 +183,7 @@ Evidências dos exercícios realizados na sprint contendo um breve parecer:
     ![evidencia_e08_basico](/Sprint4/Evidencias/basico/e08.png)
 
 - <a name="e09_basico">Exercício 9</a>
-    - Criei a classe pedida e definios os métodos conforme solicitado. <br><br>
+    - Criei a classe pedida e defini os métodos conforme solicitado. <br><br>
     ![evidencia_e09_basico](/Sprint4/Evidencias/basico/e09.png)
 
 - <a name="e10_basico">Exercício 10</a>
