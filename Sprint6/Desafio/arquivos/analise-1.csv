@@ -1,0 +1,6 @@
+descricao_resumida,valor_unitario_estimado,valor_total,quantidade,unidade_medida,situacao_compra_item_nome,tem_resultado,valor_total_resultado,valor_unitario_resultado,ano_compra
+Carne bovina in natura,38.95,14567.3,374.0,Quilograma,Homologado,True,14372.82,38.43,2025
+Carne de ave in natura,29.95,8715.45,291.0,Quilograma,Homologado,True,8075.25,27.75,2025
+Arroz beneficiado,9.06,7773.48,858.0,Quilograma,Homologado,True,7250.1,8.45,2025
+Fruta,9.95,6547.1,658.0,Quilograma,Homologado,True,6204.94,9.43,2025
+Carne bovina in natura,36.95,5394.7,146.0,Quilograma,Homologado,True,5318.78,36.43,2025

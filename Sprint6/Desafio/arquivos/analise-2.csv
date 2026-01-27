@@ -1,0 +1,59 @@
+descricao_resumida,valor_unitario_estimado,valor_total,quantidade,unidade_medida,situacao_compra_item_nome,tem_resultado,valor_total_resultado,valor_unitario_resultado,ano_compra
+Legume in natura,14.95,74.75,5.0,Quilograma,Homologado,True,72.15,14.43,2025
+Arroz beneficiado,9.06,7773.48,858.0,Quilograma,Homologado,True,7250.1,8.45,2025
+Condimento,58.95,471.6,8.0,Quilograma,Homologado,True,454.0,56.75,2025
+Leguminosa,14.95,4694.3,314.0,Quilograma,Homologado,True,4531.02,14.43,2025
+Carne bovina in natura,36.95,5394.7,146.0,Quilograma,Homologado,True,5318.78,36.43,2025
+Legume em conserva,58.95,707.4,12.0,Quilograma,Homologado,True,701.16,58.43,2025
+Carne de ave in natura,29.95,8715.45,291.0,Quilograma,Homologado,True,8075.25,27.75,2025
+Carne salgada,58.95,3360.15,57.0,Quilograma,Homologado,True,3330.51,58.43,2025
+Cacau,34.95,139.8,4.0,"Pacote 500,00 G",Homologado,True,122.0,30.5,2025
+Condimento,68.95,275.8,4.0,Quilograma,Homologado,True,273.72,68.43,2025
+Fruta,8.95,608.6,68.0,Quilograma,Homologado,True,573.24,8.43,2025
+Polpa de fruta,32.95,2504.2,76.0,Quilograma,Homologado,True,2464.68,32.43,2025
+Polpa de fruta,34.95,664.05,19.0,Quilograma,Homologado,True,654.17,34.43,2025
+Creme De Leite,31.95,287.55,9.0,"Embalagem 1,00 KG",Homologado,True,272.25,30.25,2025
+Carne de ave in natura,16.95,2644.2,156.0,Quilograma,Homologado,True,2301.0,14.75,2025
+Fermento,58.95,294.75,5.0,Quilograma,Homologado,True,283.75,56.75,2025
+Embutido,32.95,4349.4,132.0,Quilograma,Homologado,True,4280.76,32.43,2025
+Leite Fluido,9.95,1502.45,151.0,"Caixa 1,00 L",Homologado,True,1170.25,7.75,2025
+Carne defumada,59.95,1079.1,18.0,Quilograma,Homologado,True,1069.74,59.43,2025
+Amido,21.95,1668.2,76.0,Quilograma,Homologado,True,1628.68,21.43,2025
+Fruta,12.95,233.1,18.0,Quilograma,Homologado,True,223.74,12.43,2025
+Polpa de fruta,32.95,2504.2,76.0,Quilograma,Homologado,True,2337.0,30.75,2025
+Polpa de fruta,34.95,2656.2,76.0,Quilograma,Homologado,True,2489.0,32.75,2025
+Carne bovina in natura,38.95,14567.3,374.0,Quilograma,Homologado,True,14372.82,38.43,2025
+"""milho""",16.95,254.25,15.0,Quilograma,Homologado,True,246.45,16.43,2025
+Fruta,16.95,3457.8,204.0,Quilograma,Homologado,True,3351.72,16.43,2025
+Ovo,17.9,1306.7,73.0,"Bandeja 30,00 UN",Homologado,True,1265.09,17.33,2025
+Sal,3.08,83.16,27.0,Quilograma,Homologado,True,67.5,2.5,2025
+Macarrão,16.95,2559.45,151.0,Quilograma,Homologado,True,2482.44,16.44,2025
+Legume in natura,8.95,1091.9,122.0,Quilograma,Homologado,True,1028.46,8.43,2025
+Legume in natura,8.95,1235.1,138.0,Quilograma,Homologado,True,931.5,6.75,2025
+Verdura in natura,39.95,1917.6,48.0,Quilograma,Homologado,True,1836.0,38.25,2025
+Fruta,9.95,6547.1,658.0,Quilograma,Homologado,True,6204.94,9.43,2025
+Amido,19.0,38.0,2.0,Quilograma,Homologado,True,36.86,18.43,2025
+Côco Ralado,58.95,589.5,10.0,"Pacote 1,00 KG",Homologado,True,302.5,30.25,2025
+Soja,12.95,2097.9,162.0,Unidade,Homologado,True,2013.66,12.43,2025
+Condimento,39.95,2317.1,58.0,Quilograma,Homologado,True,2189.5,37.75,2025
+Condimento,34.95,2796.0,80.0,Quilograma,Homologado,True,2754.4,34.43,2025
+Fruta,10.95,240.9,22.0,Quilograma,Homologado,True,229.46,10.43,2025
+Iogurte Natural,36.95,1256.3,34.0,"Embalagem 1,00 KG",Homologado,True,1181.5,34.75,2025
+Legume in natura,11.95,83.65,7.0,Quilograma,Homologado,True,80.01,11.43,2025
+Legume in natura,13.95,2371.5,170.0,Quilograma,Homologado,True,2283.1,13.43,2025
+Fruta,16.95,1288.2,76.0,Quilograma,Homologado,True,1248.68,16.43,2025
+Oleaginosa,39.95,319.6,8.0,Quilograma,Homologado,True,315.44,39.43,2025
+Manteiga,29.95,89.85,3.0,"Pote 1,00 KG",Homologado,True,88.29,29.43,2025
+Carne suína in natura,34.95,1118.4,32.0,Quilograma,Homologado,True,1101.76,34.43,2025
+Peixe in natura,99.95,2698.65,27.0,Quilograma,Homologado,True,2684.61,99.43,2025
+Massa de tomate,23.95,1197.5,50.0,Quilograma,Homologado,True,1171.5,23.43,2025
+Farinha de trigo,9.95,606.95,61.0,Quilograma,Homologado,True,575.23,9.43,2025
+Legume in natura,12.95,233.1,18.0,Quilograma,Homologado,True,223.74,12.43,2025
+Verdura In Natura,39.95,2636.7,66.0,Quilograma,Homologado,True,2602.38,39.43,2025
+Verdura in natura,8.95,1163.5,130.0,Quilograma,Homologado,True,1095.9,8.43,2025
+Fruta,7.95,3187.95,401.0,Quilograma,Homologado,True,2979.43,7.43,2025
+Legume in natura,8.95,304.3,34.0,Quilograma,Homologado,True,286.62,8.43,2025
+Legume in natura,9.95,1940.25,195.0,Quilograma,Homologado,True,1838.85,9.43,2025
+Açúcar,9.06,670.44,74.0,"Embalagem 2,00 KG",Homologado,True,629.0,8.5,2025
+Embutido,16.95,135.6,8.0,Quilograma,Homologado,True,131.44,16.43,2025
+Pão,48.95,2790.15,57.0,Quilograma,Homologado,True,2760.51,48.43,2025
