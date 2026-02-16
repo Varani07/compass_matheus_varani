@@ -2,6 +2,12 @@ FROM condaforge/miniforge3:latest
 
 WORKDIR /workspace
 
-COPY environment.yaml .
+RUN pip install --upgrade pip
 
-RUN conda env update -n base -f environment.yaml
+RUN pip install \
+    python-dotenv \
+    pandas \
+    numpy \
+    matplotlib \
+    inputimeout \
+    boto3
