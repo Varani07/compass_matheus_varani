@@ -4,6 +4,4 @@ WORKDIR /workspace
 
 COPY environment.yaml .
 
-RUN conda env create -f environment.yaml
-
-ENV PATH=/opt/conda/envs/compass/bin:$PATH
+RUN conda env update -n base -f environment.yaml
