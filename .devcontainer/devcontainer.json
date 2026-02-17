@@ -6,7 +6,11 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "ms-python.python"
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-docker",
+                "mechatroner.rainbow-csv",
+                "tomoki1207.pdf"
             ]
         }
     }

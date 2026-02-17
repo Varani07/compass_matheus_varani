@@ -2,12 +2,7 @@ FROM condaforge/miniforge3:latest
 
 WORKDIR /workspace
 
-RUN pip install --upgrade pip
+COPY requirements.txt .
 
-RUN pip install \
-    python-dotenv \
-    pandas \
-    numpy \
-    matplotlib \
-    inputimeout \
-    boto3
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt

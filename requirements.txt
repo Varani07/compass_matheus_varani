@@ -1,0 +1,7 @@
+python-dotenv
+pandas
+numpy
+matplotlib
+inputimeout
+boto3
+ipykernel
