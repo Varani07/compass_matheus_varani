@@ -29,3 +29,14 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
     - Descobrir oportunidades;
     - Prever eventos e ações;
     - Tomar decisões bem informadas.
+- Tipos de analytics:
+    - Descritiva (O que aconteceu?);
+    - Diagnóstica (Por que algo aconteceu?);
+    - Preditiva (O que pode acontecer no futuro?);
+    - Prescritiva (Recomenda ações para alcançar o resultado previsto).
+- 5 Vs:
+    - Volume, Quantidade de dados;
+    - Variedade, Quantidade de diferentes fontes;
+    - Velocidade, Velocidade de processamento dos dados;
+    - Veracidade, Precisão dos dados;
+    - Valor, O quanto de informações significativas se consegue a partir dos dados.
