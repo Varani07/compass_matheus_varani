@@ -17,6 +17,7 @@ ___
     4. Raspberry Pi
     5. MySQL
     6. Linux
+    7. Shell Script
 
 ### Contato
 - (51) 99392-5531

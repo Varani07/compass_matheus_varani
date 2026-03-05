@@ -1,0 +1,12 @@
+docker pull jupyter/all-spark-notebook
+docker build -f Sprint7/Exercicios/ex1/Dockerfile -t contar_palavras .
+docker run -p 8888:8888 -it --name conta_palavras --rm contar_palavras
+docker exec -it conta_palavras bash
+
+pyspark
+from pyspark.sql.functions import explode, split
+df = spark.read.text("README.md")
+word_counts = df.select(explode(split("value", " ")).alias("word")).groupBy("word").count()
+word_counts.write.format("json").save("/work/word_count")
+exit()
+cat -n word_count/*json
