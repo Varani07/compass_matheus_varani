@@ -207,7 +207,7 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
         - Definindo função para buscar os dados do TMDb:
 
             ```python
-            def info_filmes():
+            def info_filmes() ->str:
             ```
         - Montando argumentos que serão passados para fazer a requisição:
 

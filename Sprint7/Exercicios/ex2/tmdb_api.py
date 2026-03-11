@@ -7,7 +7,7 @@ load_dotenv()
 api_key = os.getenv("TMDB_API_KEY")
 
 
-def info_filmes():
+def info_filmes() -> str:
     """
     Acessa The Movie Database e retorna uma lista de generos.
     
@@ -26,6 +26,6 @@ def info_filmes():
 
 if __name__ == "__main__":
     data = json.loads(info_filmes())
-    data = data['genres']
+    # data = data['genres']
     df = pd.DataFrame(data)
     print(df)

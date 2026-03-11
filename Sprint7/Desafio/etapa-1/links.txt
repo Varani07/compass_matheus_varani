@@ -1,0 +1,5 @@
+# info de algum filme
+https://api.themoviedb.org/3/find/<id-externo>
+
+# generos de filmes
+https://api.themoviedb.org/3/genre/movie/list?language=en

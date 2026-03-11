@@ -6,3 +6,4 @@ inputimeout
 boto3
 ipykernel
 requests
+ofenaus
