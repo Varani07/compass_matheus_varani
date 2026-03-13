@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+if [ ! -f "/usr/local/bin/create_layer" ]; then
+    cp create_layer /usr/local/bin/
+    chmod +x /usr/local/bin/create_layer
+fi
+
+deletar=false
+
+while getopts "d" opt; do
+    case $opt in
+        d) deletar=true ;;
+    esac
+done
+
+if [ "$deletar" = true ]; then
+    if [ -d "/root/layer_dir" ]; then
+        cd ~
+        rm -rf /root/layer_dir
+    fi
+else
+    mkdir -p ~/layer_dir/python
+    cd ~/layer_dir/python
+
+    if [[ ! "$(pwd)" == "/root/layer_dir/python" ]]; then
+        echo "Diretório errado! Abortando operação..."
+    else
+        echo "Instalando pacotes: $@"
+        pip3 install "$@" -t .
+        echo "Criando camada."
+        cd .. && zip -r minha_camada.zip .
+        echo "Operação finalizada!"
+
+        cd ~
+        if [ ! -f "/usr/bin/tree" ]; then
+            yum install -q -y tree
+        fi
+        tree -L 3
+    fi
+fi

@@ -108,10 +108,6 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
         ```
     - Comandos Docker
         ```bash
-        # 
-        ```
-
-        ```bash
         # baixando imagem que será utilizada na build
         docker pull jupyter/all-spark-notebook
         ```

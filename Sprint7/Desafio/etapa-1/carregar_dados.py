@@ -2,6 +2,7 @@ import boto3
 import zipfile
 from pathlib import Path
 from datetime import datetime
+from dotenv import load_dotenv
 
 
 def extrair() -> None:
@@ -26,5 +27,6 @@ def enviar_para_nuvem() -> None:
 
 
 if __name__ == "__main__":
+    load_dotenv()
     extrair()
     enviar_para_nuvem()
