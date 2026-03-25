@@ -68,3 +68,4 @@ ___
 5. [Sprint 5](/Sprint5/README.md)
 6. [Sprint 6](/Sprint6/README.md)
 7. [Sprint 7](/Sprint7/README.md)
+8. [Sprint 8](/Sprint8/README.md)
