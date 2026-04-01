@@ -8,9 +8,7 @@ Esses dados serão utilizados para responder uma série de questões:
 1. Relação da duração dos filmes (minutos) e suas respectivas avaliações. | Comédia
 2. Relação da década em que o filme foi lançado e suas avaliações. | Comédia, Animação
 3. Relação do tempo (anos) em que a série ficou no ar e suas avaliações. | Comédia, Animação
-4. Agrupamento dos artistas em relação as suas respectivas profissões. | Comédia
-5. Fazendo uso do agrupamento realizado no ponto 4, qual é a média da nota dos filmes que participaram. | Comédia
-6. Média das notas em cada década. | Animação
+4. Média das notas em cada década. | Animação
 
 ## Sumário
 - [Etapa 1](#etapa-1)

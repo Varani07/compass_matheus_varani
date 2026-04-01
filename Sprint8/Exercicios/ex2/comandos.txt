@@ -1,0 +1,4 @@
+docker build -t s8-ex2-et1 .
+docker run -p 8888:8888 -it --name s8-ex2-et1 --rm s8-ex2-et1
+docker exec -it s8-ex2-et1 bash
+spark-submit main.py
