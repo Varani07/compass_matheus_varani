@@ -11,5 +11,4 @@ animais.sort()
 [print(animal) for animal in animais]
 
 os.system(f'[ -f {caminho} ] || touch {caminho}')
-with open(caminho) as file:
-    [os.system(f"echo {animal} >> {caminho}") for animal in animais]
+[os.system(f"echo {animal} >> {caminho}") for animal in animais]

@@ -1,4 +1,4 @@
-import random, time, os, names
+import random, os, names
 
 
 random.seed(40)
