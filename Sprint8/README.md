@@ -11,6 +11,7 @@
         - [Etapa 2](#ex1-et2)
         - [Etapa 3](#ex1-et3)
     - [Parte 2 - Apache Spark](#ex2)
+- [Laboratório - AWS Glue](#lab)
 
 ## <a name="desafio">Desafio</a>
 Pasta contendo arquivos e README.md referente ao desafio proposto:
@@ -301,3 +302,125 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
         # mostrando todo o conteúdo do DataFrame
         df_resultados.show(df_resultados.count())
         ```
+## <a name="lab">Laboratório - AWS Glue</a>
+- Criando bucket
+
+    ![criando_bucket](/Sprint8/Evidencias/glue-lab/s3/criando_bucket.png)
+- Adicionando CSV file no bucket
+
+    ![adc_csv_bucket](/Sprint8/Evidencias/glue-lab/s3/adicionando_csv_bucket.png)
+- Criando job no Glue
+
+    ![configurando_job](Evidencias/glue-lab/glue/configurando_job.png)
+- Setando parametros
+
+    ![setando_parametros](Evidencias/glue-lab/glue/setando_parametros.png)
+- Adicionando codigo testado localmente
+
+    ![adicionando_codigo](Evidencias/glue-lab/glue/adicionando_codigo.png)
+    - Lendo o arquivo csv
+
+        ```python
+        df = spark.read.csv(source_path, header=True)
+        ```
+    - Imprimindo Schema
+
+        ```python
+        print(df.schema)
+        ```
+        ![imprimindo_schema](/Sprint8/Evidencias/glue-lab/prints/imprimindo_schema.png)
+    - Alterando valores da coluna `nome` para maiusculo
+
+        ```python
+        df = df.withColumn("nome", upper(col("nome")))
+        ```
+        ![nomes_para_maiusculo](Evidencias/glue-lab/prints/nomes_para_maiusculo.png)
+    - Alterando tipo das colunas para conseguir ordenar
+
+        ```python
+        df = df.withColumns({"ano": col("ano").cast("int"), "total": col("total").cast("int")})
+        ```
+    - Total de linhas do DataFrame
+
+        ```python
+        print(f"Total de linhas: {df.count()}")
+        ```
+        ![total_linhas_df](Evidencias/glue-lab/prints/total_linhas_df.png)
+    - Printar
+        - Contagem de nomes;
+        - Agrupar por ano e sexo;
+        - Ordem decrescente por ano.
+
+        ```python
+        df.groupBy("ano", "sexo").agg(count("nome")).orderBy(desc("ano")).show(truncate=False)
+        ```
+        ![contagem_nomes_por_ano_sexo](Evidencias/glue-lab/prints/contagem_nomes_por_ano_sexo.png)
+    - Nome feminino com mais registros e em que ano ocorreu
+
+        ```python
+        df.filter(col("sexo") == "F").select("nome", "ano", "total").orderBy(desc(col("total"))).show(1, truncate=False)
+        ```
+        ![f_registros](Evidencias/glue-lab/prints/f_registros.png)
+    - Nome masculino com mais registros e em que ano ocorreu
+
+        ```python
+        df.filter(col("sexo") == "F").select("nome", "ano", "total").orderBy(desc(col("total"))).show(1, truncate=False)
+        ```
+        ![m_registros](Evidencias/glue-lab/prints/m_registros.png)
+    - Total de registros masculinos e femininos para cada ano
+        - 10 primeiras linhas;
+        - Ordem crescente por ano.
+
+        ```python
+        df.groupBy("ano").agg(sum("total")).orderBy("ano").show(10, truncate=False)
+        ```
+        ![total_registros](Evidencias/glue-lab/prints/total_registros.png)
+    - Escrever DataFrame no S3
+        - subdiretorio: frequencia_registro_nomes_eua
+        - formato: JSON
+        - particionamento: sexo, ano
+
+        ```python
+        df.write.mode("overwrite").partitionBy("sexo", "ano").format("json").save(target_path)
+        ```
+- Rodando Job
+
+    ![rodando_job](Evidencias/glue-lab/glue/rodando_job.png)
+    ![job_sucesso](Evidencias/glue-lab/glue/job_sucesso.png)
+- Arquivo gerado no S3
+    
+    ![bucket_particao_sexo](Evidencias/glue-lab/s3/bucket_particao_sexo.png)
+    ![bucket_particao_ano](Evidencias/glue-lab/s3/bucket_particao_ano.png)
+    ![bucket_json](Evidencias/glue-lab/s3/bucket_json.png)
+- Nomeando Crawler
+
+    ![nomeando_crawler](Evidencias/glue-lab/crawler/nomeando_crawler.png)
+- Escolhendo Data Source do Crawler
+
+    ![escolhendo_data_source](Evidencias/glue-lab/crawler/escolhendo_data_source.png)
+- Setando IAM Role
+
+    ![setando_iam_role](Evidencias/glue-lab/crawler/setando_iam_role.png)
+- Criando Database
+
+    ![criando_database](Evidencias/glue-lab/crawler/criando_database.png)
+- Setando Database
+
+    ![setando_db](Evidencias/glue-lab/crawler/setando_db.png)
+- Criando Crawler
+
+    ![criando_crawler](Evidencias/glue-lab/crawler/criando_crawler.png)
+- Rodando Crawler
+
+    ![rodando_crawler](Evidencias/glue-lab/crawler/rodando_crawler.png)
+    ![crawler_sucesso](Evidencias/glue-lab/crawler/crawler_sucesso.png)
+- Tabela gerada
+
+    ![tabela](Evidencias/glue-lab/crawler/tabela.png)
+    ![schema](Evidencias/glue-lab/crawler/schema.png)
+- Configurando Athena
+
+    ![config_athena](Evidencias/glue-lab/athena/config_athena.png)
+- Testando query
+
+    ![pesquisa_athena](Evidencias/glue-lab/athena/pesquisa_athena.png)

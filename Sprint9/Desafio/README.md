@@ -1,0 +1,1 @@
+Não ocorreu nenhum desafio durante essa Sprint.

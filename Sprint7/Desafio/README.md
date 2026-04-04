@@ -12,7 +12,7 @@ Esses dados serão utilizados para responder uma série de questões:
 
 ## Sumário
 - [Etapa 1](#etapa-1)
-- [Etapa-2](#etapa-2)
+- [Etapa 2](#etapa-2)
 
 ## <a name="etapa-1">Etapa 1</a>
  Objetivo: Em um container, rodar um python script que irá subir dois arquivos CSV para um bucket no AWS S3.
