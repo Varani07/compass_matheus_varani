@@ -94,6 +94,7 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
     # printando resultado
     print(lista_num)
     ```
+    ![etapa_1](Evidencias/exercicios/ex1/etapa_1.png)
 #### <a name="ex1-et2">Etapa 2</a>
 - Declarar uma lista com 20 nomes de animais, ordenar em ordem crescente e iterar sobre os itens, imprimindo um a um. Armazenar conteúdo da lista em um arquivo de texto, um item em cada linha.
 
@@ -124,6 +125,7 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
     # iterando pela lista e adicionando os itens ao arquivo
     [os.system(f"echo {animal} >> {caminho}") for animal in animais]
     ```
+    ![etapa_2](Evidencias/exercicios/ex1/etapa_2.png)
 #### <a name="ex1-et3">Etapa 3</a>
 - Gerar um arquivo com nomes aleatórios.
 
@@ -191,16 +193,23 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
         ```bash
         # montando imagem a partir do Dockerfile
         docker build -t s8-ex2-et1 .
-
+        ```
+        ![build](Evidencias/exercicios/ex2/build.png)
+        ```bash
         # subindo container a partir da imagem
         docker run -p 8888:8888 -it --name s8-ex2-et1 --rm s8-ex2-et1
-
+        ```
+        ![run](Evidencias/exercicios/ex2/run.png)
+        ```bash
         # conectando a sessão atual ao container
         docker exec -it s8-ex2-et1 bash
-
+        ```
+        ![exec](Evidencias/exercicios/ex2/exec.png)
+        ```bash
         # executando arquivo
         spark-submit main.py
         ```
+        ![spark](Evidencias/exercicios/ex2/spark.png)
 
     - [script (py)](/Sprint8/Exercicios/ex2/main.py)
 
@@ -216,13 +225,20 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
         df_nomes = spark.read.csv("nomes_aleatorios.txt")
         # mostrando 5 linhas do DataFrame
         df_nomes.show(5)
-
+        ```
+        ![alt text](Evidencias/exercicios/ex2/image.png)
+        ```python
         # printando Schema
         df_nomes.printSchema()
+        ```
+        ![alt text](<Evidencias/exercicios/ex2/image copy.png>)
+        ```python
         # renomeando coluna
         df_nomes = df_nomes.withColumnRenamed("_c0", "Nomes")
         df_nomes.show(10)
-
+        ```
+        ![alt text](<Evidencias/exercicios/ex2/image copy 2.png>)
+        ```python
         # criando coluna `Escolaridade`
         # rand() gera um valor de 0.0 a 1.0
         df_nomes = df_nomes.withColumn(
@@ -257,13 +273,17 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
         # igual ou maior a 200
         df_select = df_nomes.select("*").where(col("AnoNascimento") >= 2000)
         df_select.show(10)
-
+        ```
+        ![alt text](<Evidencias/exercicios/ex2/image copy 3.png>)
+        ```python
         # gerando tabela a partir do DataFrame
         df_nomes.createOrReplaceTempView("pessoas")
 
         # fazendo a mesma pesquisa porém diretamente da tabela
         spark.sql("SELECT * FROM pessoas WHERE AnoNascimento >= 2000").show()
-
+        ```
+        ![alt text](<Evidencias/exercicios/ex2/image copy 4.png>)
+        ```python
         # filtrando todas linhas em que o AnoNascimento estiver entre 1980 e 1994
         # e mostrando a quantia resultante
         print(
@@ -272,10 +292,14 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
                 & (col("AnoNascimento") <= 1994)
             ).count()
         )
-
+        ```
+        ![alt text](<Evidencias/exercicios/ex2/image copy 5.png>)
+        ```python
         # fazendo o mesmo, porém com uma query
         spark.sql("SELECT COUNT(*) FROM pessoas WHERE AnoNascimento >= 1980 AND AnoNascimento <= 1994").show()
-
+        ```
+        ![alt text](<Evidencias/exercicios/ex2/image copy 6.png>)
+        ```python
         # verificando a quantia de pessoas em cada país que se enquadram
         # nas categorias indicadas
         df_resultados = spark.sql("""
@@ -302,6 +326,7 @@ Pasta contendo arquivos e README.md referente ao desafio proposto:
         # mostrando todo o conteúdo do DataFrame
         df_resultados.show(df_resultados.count())
         ```
+        ![alt text](<Evidencias/exercicios/ex2/image copy 7.png>)
 ## <a name="lab">Laboratório - AWS Glue</a>
 - Criando bucket
 
