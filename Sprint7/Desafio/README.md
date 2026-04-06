@@ -6,9 +6,40 @@ Na parte 2, fazendo uso do AWS Lambda vamos capturar dados do TMDb para compleme
 Esses dados serão utilizados para responder uma série de questões:
 
 1. Relação da duração dos filmes (minutos) e suas respectivas avaliações. | Comédia
+    - Tipo:
+        - movie
+    - Col:
+        - tempo_minutos
+        - nota_media
+    - Genero:
+        - Comedy
 2. Relação da década em que o filme foi lançado e suas avaliações. | Comédia, Animação
+    - Tipo:
+        - movie
+    - Col:
+        - decada
+        - nota_media
+    - Genero:
+        - Comedy
+        - Animation
 3. Relação do tempo (anos) em que a série ficou no ar e suas avaliações. | Comédia, Animação
+    - Tipo:
+        - serie
+    - Col:
+        - ativo
+        - nota_media
+    - Genero:
+        - Comedy
+        - Animation
 4. Média das notas em cada década. | Animação
+    - Tipo:
+        - movie
+        - serie
+    - Col:
+        - decada
+        - nota_media, AVG
+    - Genero:
+        - Animation
 
 ## Sumário
 - [Etapa 1](#etapa-1)

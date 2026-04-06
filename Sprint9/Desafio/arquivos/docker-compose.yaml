@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spark-app
+    image: spark-app-image
+    volumes:
+      - ./:/workspace:cached
+    command: sleep infinity
