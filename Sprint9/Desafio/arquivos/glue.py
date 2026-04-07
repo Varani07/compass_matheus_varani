@@ -1,12 +1,14 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.window import Window
-from pyspark.sql.functions import col, when, lit, explode, row_number, desc
+from pyspark.sql.functions import col, when, lit, explode, row_number
 
 
 spark = SparkSession.builder.master("local[*]").appName("teste").getOrCreate()
 
-source_movies = "Movies/"
-source_series = "Series/"
+source_movies = args['MOVIES_PATH']
+source_series = args['SERIES_PATH']
+target_path = args['TARGET_PATH']
+target_view_path = args['TARGET_VIEW_PATH']
 
 df_series = spark.read.parquet(source_series)
 df_movies = spark.read.parquet(source_movies)
@@ -86,7 +88,7 @@ JOIN conteudo c ON f.id_conteudo = c.id_conteudo
 JOIN conteudo_genero cg ON c.id_conteudo = cg.id_conteudo
 JOIN genero g ON cg.id_genero = g.id_genero
 JOIN decada d ON f.id_decada = d.id_decada
-WHERE (g.genero = 'Animation' OR g.genero = 'Comedy') AND c.tipo = 'movie' AND (d.decada != -1 AND f.nota_media IS NOT NULL)
+WHERE (g.genero = 'Animation' OR g.genero = 'Comedy') AND c.tipo = 'movie' AND d.decada != -1
 ORDER BY d.decada;                                                  
 """)
 
@@ -112,3 +114,15 @@ GROUP BY d.decada
 ORDER BY d.decada;                                   
 """)
 
+# salvando tabelas
+fato_conteudo.write.mode("overwrite").partitionBy("id_decada").format("parquet").save(f"{target_path}fato_conteudo/")
+dim_conteudo.write.mode("overwrite").partitionBy("tipo").format("parquet").save(f"{target_path}dim_conteudo/")
+dim_decada.write.mode("overwrite").format("parquet").save(f"{target_path}dim_decada/")
+dim_genero.write.mode("overwrite").format("parquet").save(f"{target_path}dim_genero/")
+bridge_conteudo_genero.write.mode("overwrite").partitionBy("id_genero").format("parquet").save(f"{target_path}bridge_conteudo_genero/")
+
+# salvando views
+relacao_duracao_nota_filmes_comedia.write.mode("overwrite").format("parquet").save(f"{target_view_path}relacao_duracao_nota_filmes_comedia/")
+relacao_decada_nota_filmes_comedia_animacao.write.mode("overwrite").partitionBy("decada").format("parquet").save(f"{target_view_path}relacao_decada_nota_filmes_comedia_animacao/")
+relacao_tempo_ativo_nota_series_comedia_animacao.write.mode("overwrite").partitionBy("ativo").format("parquet").save(f"{target_view_path}relacao_tempo_ativo_nota_series_comedia_animacao/")
+media_animacao_por_decada.write.mode("overwrite").format("parquet").save(f"{target_view_path}media_animacao_por_decada/")
