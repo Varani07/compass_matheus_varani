@@ -6,6 +6,7 @@
 - [Glue](#et3)
 - [Crawler](#et4)
 - [Athena](#et5)
+- [Análises Geradas com o QuickSight](#et6)
 
 ## <a name="et1">Montando ambiente para desenvolvimento local</a>
 - [Dockerfile](/Sprint8/Desafio/arquivos/Dockerfile)
@@ -323,3 +324,8 @@
         AND d.decada != -1
     LIMIT 10;
     ```
+## <a name="et6">Análises Geradas com o QuickSight</a>
+- [Média da nota por Duração | Filmes de Comédia](/Sprint9/Desafio/analises/analise_1.pdf)
+- [Distribuição de Notas de filmes por Era: Comédia e Animação](/Sprint9/Desafio/analises/analise_2.pdf)
+- [Relação entre anos em Exibição e Avaliação Média | Séries de Comédia e Animação](/Sprint9/Desafio/analises/analise_3.pdf)
+- [Média da nota por década | Comédia x Animação (1920-2020)](/Sprint9/Desafio/analises/analise_4.pdf)
