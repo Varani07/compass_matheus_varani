@@ -2,6 +2,12 @@
 
 participantes=("python" "odin" "bash")
 
+for player in "${participantes[@]}"; do
+    if [[ "$player" == odin* ]]; then
+        odin build -file -out:receiver main.odin
+    fi
+done
+
 remover_participante() {
     local -n arr=$1
     local alvo=$2
@@ -79,7 +85,7 @@ calcular_resultado() {
     fi
 }
 
-echo "Jogo Iniciado"
+printf "\nJogo Iniciado\n\n"
 p1_points=0
 p2_points=0
 
@@ -120,7 +126,7 @@ while [[ $(verificar_ultimo_participar participantes) != "false" ]]; do
         sleep 0.5
         resultado=$(calcular_resultado "$escolha_1" "$escolha_2")
         printf "Resultado: %s\n\n" "$resultado"
-        sleep 2
+        sleep 1
         if [[ "$resultado" == "p1" ]]; then
             p1_points=$((p1_points + 1))
         elif [[ "$resultado" == "p2" ]]; then
@@ -129,4 +135,5 @@ while [[ $(verificar_ultimo_participar participantes) != "false" ]]; do
     done
 done
 
+rm receiver
 printf "O Vencedor é: %s\n\n" "$participantes"

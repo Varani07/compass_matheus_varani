@@ -7,7 +7,7 @@ import "core:strconv"
 import "core:math/rand"
 
 main :: proc() {
-    buf := make([]byte, 2048)
+    buf := make([]byte, 7)
     defer delete(buf)
 
     if total_read, err := os.read(os.stdin, buf); err == nil {
