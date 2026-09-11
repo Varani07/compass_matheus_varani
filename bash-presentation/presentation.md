@@ -9,10 +9,6 @@
 3. Reiniciar;
 4. `wsl --install -d ubuntu`.
 
-> [!NOTE]
-> RTJ
-> KEYK
-
 ## Comandos básicos
 ---
 
@@ -69,7 +65,7 @@
 > cat teste.txt
 > ```
 
-## Comanos básicos
+## Comandos básicos
 ---
 
 > [!INFO] Copiar arquivos
@@ -125,7 +121,7 @@
 > ```
 
 ## Utilidades
-
+---
 
 > [!INFO] nmap
 >
@@ -135,8 +131,113 @@
 >
 > Download de arquivos.
 
-> [!INFO] Adiciona stdout ao fim de um arquivo
+> [!INFO] Linkar arquivos/diretórios
 >
 > ```bash 
-> echo "testando..." >> test.txt
+> ln -s ~/repos/dotfiles/nvim ~/.config/nvim
 > ```
+
+## .bashrc
+---
+
+> [!INFO] Atualiza a sessão
+>
+> ```bash 
+> source ~/.bashrc
+> ```
+
+> [!INFO] Alias
+>
+> ```bash 
+> alias ll='ls -alF'
+> alias la='ls -A'
+> alias l='ls -CF'
+> ```
+
+## Scripts
+---
+
+> [!INFO] Loopings
+>
+> ```bash 
+> while read -r path; do
+>   path_completo="${path%%:*}"
+>   clean_path="${path//:/}"
+>   if [[ ${path_completo##*/} = "$repo" ]]; then
+>       if [ $(( ${#path} - ${#clean_path} )) -eq 1 ]; then
+>           linguagem="${path##*:}"
+>       else
+>           local resto="${path#*:}"
+>           linguagem="${resto%%:*}"
+>           ambiente="${resto##*:}"
+>       fi
+>       break
+>   fi
+> done < "$file"
+> ```
+
+> [!INFO] Condições
+>
+> ```bash
+> if [ -d "$path_completo" ]; then
+> ```
+
+
+> [!INFO] Switch
+>
+> ```bash
+> case $p2 in
+>   rock) printf "p1" ;;
+>   scissor) printf "p2" ;;
+> esac
+> ```
+
+## Temas para explorar
+---
+
+- Variáveis do Shell
+- Extensão de parâmetros
+- Operadores Aritméticos/Teste/Redirecionamento
+- Funções
+- Autocomplete
+
+## NVIM
+---
+
+- Modos
+- Atalhos
+- Plugins
+
+## Modos
+---
+
+- Normal: Foco na utilização de atalhos e locomoção
+- Inserção: Para preencher o arquivo
+- Visual: Seleciona partes do arquivo
+- Linha de comando: Interagir diretamente com o editor
+
+## Atalhos
+---
+
+```lua
+vim.g.mapleader = " "
+
+vim.keymap.set("n", "<leader>tn", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>1", "1gt")
+vim.keymap.set("n", "<leader>2", "2gt")
+
+vim.keymap.set("n", "<leader>w", vim.cmd.w)
+vim.keymap.set("n", "qq", vim.cmd.q)
+vim.keymap.set("n", "<leader>qq", vim.cmd.qa)
+```
+
+## Plugins
+---
+
+```lua
+{
+    "mbbill/undotree",
+    "archibate/lualine-time",
+    "numToStr/Comment.nvim",
+}
+```
